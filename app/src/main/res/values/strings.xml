@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="repeat_the_password">Repeat the password</string>
+    <string name="birthday">Birthday</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="i_already_have_an_account">I already have an Account</string>
+
+    <string name="movie_name">Movie name</string>
+    <string name="year">Year</string>
+    <string name="country">Country</string>
+    <string name="genre">Genre</string>
+    <string name="rating_placeholder">0</string>
+    <string name="divider">•</string>
+    <string name="watch">Watch</string>
+    <string name="favorites">Favorites</string>
+    <string name="gallery">Gallery</string>
+    <string name="main">Main</string>
+    <string name="profile">Profile</string>
+    <string name="avatar_link">Avatar Link</string>
+    <string name="gender">Gender</string>
+    <string name="save">Save</string>
+    <string name="log_out">Log Out</string>
+    <string name="description">Description</string>
+    <string name="about">About</string>
+    <string name="duration">Duration</string>
+    <string name="director">Director</string>
+    <string name="budget">Budget</string>
+    <string name="fees">Fees</string>
+    <string name="age_limit">Age Limit</string>
+    <string name="reviews">Reviews</string>
+    <string name="review">Review</string>
+    <string name="my_review">мой отзыв</string>
+    <string name="anonymous">Анонимный пользователь</string>
+    <string name="date">Date</string>
+    <string name="is_anonymous">Is Anonymous</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_background"
+    android:fillViewport="true"
+    tools:context=".view.SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/icon_logo"
+            android:layout_width="123dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_app_name"
+            android:layout_width="150dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_app_name"
+            app:layout_constraintEnd_toEndOf="@id/icon_logo"
+            app:layout_constraintStart_toStartOf="@id/icon_logo"
+            app:layout_constraintTop_toBottomOf="@id/icon_logo" />
+
+        <TextView
+            android:id="@+id/text_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plex_sans_bold"
+            android:text="@string/sign_up"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_app_name" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="@font/plex_sans_regular"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/gray_faded"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/text_sign_up" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="@font/plex_sans_regular"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/gray_faded"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edit_username" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="@font/plex_sans_regular"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/gray_faded"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="@font/plex_sans_regular"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/gray_faded"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edit_name" />
+
+        <EditText
+            android:id="@+id/edit_repeat_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="@font/plex_sans_regular"
+            android:hint="@string/repeat_the_password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/gray_faded"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edit_password" />
+
+        <TextView
+            android:id="@+id/edit_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="@font/plex_sans_regular"
+            android:onClick="showCalendar"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:text="@string/birthday"
+            android:textColor="@color/gray_faded"
+            app:drawableEndCompat="@drawable/ic_birthday"
+            app:layout_constraintTop_toBottomOf="@id/edit_repeat_password" />
+
+        <TextView
+            android:id="@+id/button_male"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_male"
+            android:fontFamily="@font/plex_sans_regular"
+            android:paddingVertical="9dp"
+            android:text="@string/male"
+            android:textAlignment="center"
+            android:textColor="@color/gray_faded"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/button_female"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_birthday" />
+
+        <TextView
+            android:id="@+id/button_female"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_female"
+            android:fontFamily="@font/plex_sans_regular"
+            android:paddingVertical="9dp"
+            android:text="@string/female"
+            android:textAlignment="center"
+            android:textColor="@color/gray_faded"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_male"
+            app:layout_constraintTop_toTopOf="@id/button_male" />
+
+        <TextView
+            android:id="@+id/button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border_edittext"
+            android:fontFamily="@font/plex_sans_medium"
+            android:paddingVertical="12dp"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/button_male" />
+
+        <TextView
+            android:id="@+id/button_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/plex_sans_medium"
+            android:padding="8dp"
+            android:text="@string/i_already_have_an_account"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_signup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
